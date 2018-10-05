@@ -1,0 +1,60 @@
+\input{coredef.tex}
+
+%opening
+\def\ntitle{Principles of Quantum Mechanics}
+\def\nauthor{mostanes}
+\def\npart{II}
+\def\nterm{Michelmas}
+\def\nyear{2018}
+\def\nlecturer{Skinner}
+
+\renewcommand*{\H}{\mathcal{H}}
+
+\begin{document}
+	
+\mktitlepage
+	
+\newpage
+
+\setcounter{section}{-1}
+
+\section{Preface}
+This course draws heavily from material in IB, with references to Linear Algebra, Analysis II, Methods; as well as some references to IB Quantum Mechanics. Note however that this course is likely to prove a lot of the intuitive notions from IB QM, so it should be accessible even to those who were left baffled by IB QM. The author of these notes will make generous references to IB material without restating it, unlike the course lecturer. References to II material will also be made where appropriate.
+
+\newpage
+
+\section{Introduction}
+\subsection{Comparison of Classical and Quantum Mechanics}
+\subsubsection{Classical Mechanics}
+Classical mechanics are governed by Newton's laws, which are 2nd order differential equations in the variables $\vec{x}$, $\vec{p}$. By combining the 2 variables as in classical dynamics, we obtain the \textbf{phase space}, which in Newtonian dynamics is $\R^{2n}$, with the particular case $n=3$ our universe.\\
+In classical mechanics, the observables are simple quantities, represented by functions $\R^{2n} \rightarrow \R$.
+
+\subsubsection{Quantum Mechanics}
+Particles are instead represented by points in a Hilbert space (equivalent of the phase space).\\
+Observables are represented by linear operators $\H \rightarrow \H$.
+
+\subsection{Hilbert spaces}
+\begin{remark}
+	There is an entire chapter of linear analysis dedicated to Hilbert spaces.
+\end{remark}
+
+\begin{definition}
+	A Hilbert space $\H$ is a vector space (over $\C$) with a complete inner product $(\cdot,\cdot) : \H \times \H \rightarrow \C$.
+\end{definition}
+Therefore Hilbert spaces satisfy the usual vector space and complex inner product properties and any Cauchy sequence converges to a vector within the space under the norm induced by the inner product.
+\subsubsection{Examples}
+Every finite dimensional Hilbert space (of dimension $n$) is isomorphic to $\C^n$ (see Linear Analysis).\\
+A simple $\infty$-dimensional space is $l^2$, the space of infinite sequences (converging under the 2-norm; see Analysis II).\\
+Another example is $L^2$, the function space of Lebesgue integrable functions (integrals converging under the 2-norm; see Probability and Measure). Their inner product is defined analogously to the inner product of $l^2$ and the norm of $L^2$.
+\subsection{Dual spaces}
+The dual $\H^\star$ of a Hilbert space $\H$ is space of linear operators $\H \rightarrow \C$. One way of obtaining such operators is by considering the inner product $(\chi,\cdot) : \H \rightarrow \C$.\\
+By the Riesz representation theorem (see Linear Analysis), all elements in $\H^\star$ can be written in inner product form.
+\subsection{Dirac notation}
+Dirac invented the following notation which is standard today in QM:\\
+\begin{tabular}{ccc}
+	Elements of $\H$ & written $\ket{\cdot}$ & called 'ket'\\
+	Elements of $\H^\star$ & written $\bra{\cdot}$ & called 'bra'\\
+	Inner product & written $\bra{\cdot}\ket{\cdot}$ & called 'braket'\\
+\end{tabular}
+
+\end{document}

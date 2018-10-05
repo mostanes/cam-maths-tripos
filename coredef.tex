@@ -1,0 +1,92 @@
+\documentclass[utf8,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{stmaryrd}%symbols used so far: \mapsfrom
+\usepackage{empheq}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{eg}{Example}
+\newtheorem*{remark}{Remark}
+\newtheorem*{ex}{Exercise}
+\newtheorem*{notation}{Notation}
+\newtheorem*{slogan}{Slogan}
+\newtheorem*{convention}{Convention}
+\newtheorem*{assumption}{Assumption}
+\newtheorem*{question}{Question}
+\newtheorem*{answer}{Answer}
+\newtheorem*{note}{Note}
+\newtheorem*{application}{Application}
+
+\newcommand*{\mktitlepage}{\begin{titlepage}
+		\begin{center}
+			{ \scshape\huge Mathematical Tripos \par }
+			\vspace{2cm}
+			{\huge Part \npart \par}
+			\vspace{0.6cm}
+			{\Huge \bfseries \ntitle \par}
+			\vspace{1.2cm}
+			{\Large\nterm \quad \nyear \par}
+			\vspace{2cm}			
+			{\large \emph{Lectures by } \par}
+			\vspace{0.2cm}
+			{\Large \scshape \nlecturer}
+			
+			\vspace{0.5cm}
+			{\large \emph{Notes by }\par}
+			\vspace{0.2cm}
+			{\Large { \nauthor} }
+		\end{center} %
+		\title{\ntitle}
+		\author{\nauthor}
+	\end{titlepage}}
+
+
+\newcommand*{\conj}[1]{\overline{#1}}
+%set complement
+\newcommand*{\stcomp}[1]{\overline{#1}}
+\newcommand*{\compose}{\circ}
+\newcommand*{\nto}{\nrightarrow}
+\newcommand*\p{\partial}
+%embed
+\newcommand*{\embed}{\hookrightarrow}
+
+%matrix
+\newcommand*{\matrixring}{\mathcal{M}}
+
+%groups
+\newcommand*{\normal}{\trianglelefteq}
+
+%fields
+\newcommand*{\C}{\mathbb{C}}
+\newcommand*{\R}{\mathbb{R}}
+\newcommand*{\Q}{\mathbb{Q}}
+\newcommand*{\Z}{\mathbb{Z}}
+\newcommand*{\N}{\mathbb{N}}
+\newcommand*{\F}{\mathbb{F}}
+
+%asymptotic
+\newcommand*{\bigO}{O}
+\newcommand*{\smallo}{o}
+
+%probability
+\newcommand*{\prob}{\mathbb{P}}
+\newcommand*{\E}{\mathbb{E}}
+
+%vector calculus
+\newcommand*{\gradient}{\V \nabla}
+\newcommand*{\divergence}{\gradient \cdot}
+\newcommand*{\curl}{\gradient \cdot}
+
+%quantum
+\newcommand*{\curlyH}{\mathcal{H}}
+\usepackage{physics}

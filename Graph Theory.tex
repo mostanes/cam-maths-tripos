@@ -1,0 +1,65 @@
+\input{coredef.tex}
+
+%opening
+\def\ntitle{Graph Theory}
+\def\nauthor{mostanes}
+\def\npart{II}
+\def\nterm{Michelmas}
+\def\nyear{2018}
+\def\nlecturer{Paul Russel}
+\begin{document}
+	
+	\mktitlepage
+	
+	\newpage
+	
+	\setcounter{section}{-1}
+	
+\section{Preface}
+The course is self-contained and has almost no prerequisites (the only ones are mainly IA material). The book recommended for a more in-depth study of the material is I. B. Bollobas's "Modern Graph Theory" (published by Springer).
+
+\newpage
+
+\section{Introduction}
+A preliminary definition of graphs:
+\begin{definition}
+	A graph consists of some 'vertices' with soem pairs of vertices joined by 'edges'
+\end{definition}
+
+\subsection{Types of graph problems:}
+\subsubsection{Bridges of Konigsberg}
+\begin{question}Is it possible to walk round the city crossing each bridge precisely once and returning to the starting point?
+\end{question}
+\begin{question}
+Is it possible to walk round the multigraph traversing each edge precisely once and finishing at the starting vertex?
+\end{question}
+\subsubsection{Four Colour Problem}
+\begin{question}
+	How many colours are needed to colour a map?
+\end{question}
+\subsubsection{Simultaneous coset representation}
+Let $G$ be a finite group and $H \leq G$. Let $n = \left|G:H\right|$. Then we know $\exists a_i, b_i \in G$ s.t. $a_i H$ are the left cosets and $H b_i$ are the right cosets of $H$ in $G$.
+\begin{question}
+	$\exists ? c_i $ s.t. $c_i H$ are the left cosets and $H c_i$ are the right cosets of $H$ in $G$
+\end{question}
+By considering $X$ the set of left cosets and $Y$ the set of right cosets of $H$ in $G$, let $E = X \cup Y$ and $V = \left\lbrace (gH, Hg) : g \in G \right\rbrace$.
+\begin{question}
+	$\exists ? \epsilon \subset E$ s.t. $\forall v \in V$, $\exists$ unique $e \in \epsilon$ s.t. $e$ has $v$ as an endpoint
+\end{question}
+\subsubsection{Fermat equation mod p}
+$x^n + y^n = z^n$ has no non-trivial solutions in $\Z$ if $n \geq 3$.
+\begin{question}
+	Does $x^n + y^n = z^n$ have any non-trivial solutions in $\Z_p$?
+\end{question}
+\begin{theorem}
+	Let $n \in \N$. Then for $\forall$ sufficiently large $p$, there are $x,y,z \neq 0 \pmod{p}$ with $x^n + y^n \equiv z^n \pmod{p}$.
+\end{theorem}
+\begin{proof}
+	Let $G = \Z_p^\times$, the multiplicative group of residues modulo $p$. Let $H = \left\lbrace g^n : g \in G \right\rbrace \leq G$. We want $x, y, z \in H$ s.t. $x+y=z$.\\
+	Looking at the cosets of $H$, we have $\left|H\right| \geq \frac{\left|G\right|}{n}$. We also note that $\forall g \in G$, if $\exists u,v,w \in gH$, then $g^{-1}u + g^{-1}v = g^{-1}w$ and $g^{-1}u, g^{-1}, g^{-1}w \in H$. We have reduced the problem to the following combinatorial statement:
+\end{proof}
+\begin{theorem}[Schur's theorem]
+	Let $n$ be a positive integer. Then for $\forall$ sufficiently large $k$, if $\left[k\right] = \left\lbrace 1, 2, ..., k \right\rbrace$ is partitioned in $n$ parts, $\exists u, v, w$ in the same part s.t. $u+v=w$.	
+\end{theorem}
+
+\end{document}
